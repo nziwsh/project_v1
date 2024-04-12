@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="wrraper">
+<div class="menu">
+    <nav><div class="menu_item">
+        <a href="" class="link">Home</a>
+        <a href="" class="link">About</a>
+        <a href="" class="link">Contain</a>
+        <a href="" class="link">Gallery
+        </a>
+    </div>
+    </nav>
+</div>
+<!-- slider -->
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./image/images.jfif" alt=""></div>
+      <div class="swiper-slide"><img src="./image/painting-mountain-lake-with-mountain-background_188544-9126.avif" alt=""></div>
+      <div class="swiper-slide"><img src="./image/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.avif" alt=""></div>
+      
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+    </div>
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+</body>
+</html>
